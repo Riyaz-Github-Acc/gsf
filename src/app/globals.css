@@ -1,33 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --Primiary_Color: '#f8821e';
+  --Secondary_Color: '#1d013b';
+  --White_Color: '#fafafa';
+  --Black_Color: '#000';
+  --Grey_Color: '#ccc';
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+h2 {
+  font-family: 'Oswald';
+  font-weight: 600;
+}
+
+/* Navbar */
+.mobileNav {
+  display: none !important;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  /* font-family: 'Oswald'; */
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: #f8821e;
+}
+
+/* Button */
+.button {
+  font-family: 'Oswald';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 54px;
+}
+
+.primaryBtn {
+  background: linear-gradient(to right, #f8821e 50%, #1d013b 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: 2px solid #1d012b;
+  transition: all 0.5s ease-out;
+}
+
+.ghostBtn {
+  background: linear-gradient(to right, #f8821e 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: 2px solid #fafafa;
+  transition: all 0.5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+  border: 2px solid #f8821e;
+  /* transition: all 0.5s ease-out; */
+}
+
+.btnText {
+  font-size: 18px;
+  color: #fafafa;
+  text-align: center;
+}
+
+/* Pattern */
+.pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pattern img {
+  /* width: 100%; */
+  max-width: 1200px;
+  height: 100%;
+}
+
+/* Video Play Button */
+.playButton {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#f8821e, #fc9d13);
+  border-radius: 50%;
+  z-index: 8;
+}
+
+.playButton::before,
+.playButton::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fc9d13;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.playButton:before {
+  animation: pulse 2s ease-out infinite;
+}
+
+.playButton:after {
+  animation: pulse 2s 1s ease-out infinite;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Navbar */
+  .hideOnMobile {
+    display: none !important;
+  }
+  .mobileNav {
+    display: flex !important;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* .nav-links {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    background: #000;
+    color: #fafafa;
+    margin: auto;
+    border-radius: 25px;
+  } */
+
+  /* Mobile Nav Styles */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    background: #000;
+    padding-top: 100px;
+    transform: translateX(-100%);
+    will-change: transform;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  li {
+    color: #fafafa;
+    display: block;
+    transform-origin: -20px 50%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    will-change: transform, opacity, filter;
+  }
+
+  li:hover {
+    color: #f8821e;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+  }
+
+  .menuToggle {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e9630d;
+    padding: 10px;
+  }
+
+  .menuToggle path {
+    fill: #fafafa;
+  }
+
+  /* Button */
+  .button {
+    width: 150px;
+    height: 50px;
+  }
+
+  .btnText {
+    font-size: 16px;
   }
 }
