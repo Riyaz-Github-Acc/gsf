@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import useMenuAnimation from './animations/useMenuAnimation'
 import { MenuToggle } from './MenuToggle'
 import useLockBodyScroll from '@/hooks/useLockBodyScroll'
+import menu from '@/constants/menu'
 
 export const Navbar = () => {
   return (
@@ -20,12 +21,11 @@ export const Navbar = () => {
       </div>
 
       <div className='nav-links'>
-        <Link href='#'>Home</Link>
-        <Link href='#'>About</Link>
-        <Link href='#'>Members</Link>
-        <Link href='#'>Events</Link>
-        <Link href='#'>Gallery</Link>
-        <Link href='#'>Contact</Link>
+        {menu.map((link) => (
+          <Link href={link.href} key={link.name}>
+            {link.name}
+          </Link>
+        ))}
       </div>
     </nav>
   )
@@ -63,12 +63,13 @@ export const FloatNavbar = () => {
       </div>
 
       <div className='nav-links'>
-        <Link href='#'>Home</Link>
-        <Link href='#'>About</Link>
-        <Link href='#'>Members</Link>
-        <Link href='#'>Events</Link>
-        <Link href='#'>Gallery</Link>
-        <Link href='#'>Contact</Link>
+        <div className='nav-links'>
+          {menu.map((link) => (
+            <Link href={link.href} key={link.name}>
+              {link.name}
+            </Link>
+          ))}
+        </div>
       </div>
     </motion.nav>
   )
@@ -113,12 +114,11 @@ export const MobileFloatNavbar = () => {
       <div ref={scope}>
         <nav className='menu'>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Members</li>
-            <li>Events</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+            {menu.map((link) => (
+              <Link href={link.href} key={link.name}>
+                <li>{link.name}</li>
+              </Link>
+            ))}
           </ul>
         </nav>
         <div style={{ marginTop: '-10px' }}>
