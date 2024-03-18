@@ -10,6 +10,7 @@ import { FloatNavbar, MobileFloatNavbar, Navbar } from '@/components/Navbar'
 import Benefits from '@/components/Benefits'
 import Heading from '@/components/Heading'
 import WhyUs from '@/components/WhyUs'
+import { Testimonials } from '@/components/Testimonials'
 
 const Home = () => {
   const images = [
@@ -135,6 +136,7 @@ const Home = () => {
       {/* Testimonials */}
       <section className='container my-14 space-y-5'>
         <Heading title='Testimonials' />
+        <Testimonials />
       </section>
 
       {/* Blog */}
