@@ -22,7 +22,7 @@
   font-family: inherit;
 }
 
-h2 {
+h2, h3 {
   font-family: 'Oswald';
   font-weight: 600;
 }
@@ -149,6 +149,23 @@ h2 {
   height: 100% !important;
   object-fit: cover;
 }
+
+/* Blog Card */
+.blogCardImg {
+  width: 100%;
+  height: 240px;
+}
+
+.blogCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogIcon p {
+  white-space: nowrap;
+}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {

@@ -11,6 +11,7 @@ import Benefits from '@/components/Benefits'
 import Heading from '@/components/Heading'
 import WhyUs from '@/components/WhyUs'
 import { Testimonials } from '@/components/Testimonials'
+import BlogCard from '@/components/BlogCard'
 
 const Home = () => {
   const images = [
@@ -77,7 +78,7 @@ const Home = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className='container my-14 space-y-5'>
+      <section className='container my-14'>
         <Benefits />
       </section>
 
@@ -95,7 +96,7 @@ const Home = () => {
           <Image src='/assets/about/about-1.png' alt='about-img' height={450} width={405} />
         </div>
 
-        <div className='flex-1 space-y-5'>
+        <div className='flex-1'>
           <Heading title='Why Choose Us' />
           <p className='text-justify text-slate-500'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
@@ -108,44 +109,78 @@ const Home = () => {
       </section>
 
       {/* Experience */}
-      <section className='container my-14 space-y-5'>
+      <section className='container my-14'>
         <Heading title='Experience' />
         {/* Parallax Image will come here */}
       </section>
 
       {/* Team */}
-      <section className='container my-14 space-y-5'>
-        <Heading title='Out Team' />
+      <section className='container my-14'>
+        <Heading title='Our Team' />
+         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
+          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+        </p>
       </section>
 
       {/* Gallery */}
-      <section className='container my-14 space-y-5'>
+      <section className='container my-14'>
         <Heading title='Gallery' />
+         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
+          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+        </p>
       </section>
 
       {/* Athletes */}
-      <section className='container my-14 space-y-5'>
-        <Heading title='Out Athletes' />
+      <section className='container my-14'>
+        <Heading title='Our Athletes' />
+         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
+          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+        </p>
       </section>
 
       {/* Instgram */}
-      <section className='container my-14 space-y-5'>
+      <section className='container my-14'>
         <Heading title='Instgram' />
+         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
+          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+        </p>
       </section>
 
       {/* Testimonials */}
-      <section className='container my-14 space-y-5'>
+      <section className='container my-14'>
         <Heading title='Testimonials' />
+        <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
+          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+        </p>
         <Testimonials />
       </section>
 
       {/* Blog */}
-      <section className='container my-14 space-y-5'>
+      <section className='container my-14'>
         <Heading title='Blog Posts' />
+        <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
+          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+        </p>
+        <BlogCard />
+        <div className='flex items-center justify-center mt-7'>
+          <PrimaryBtn label='View More'/>
+        </div>
       </section>
 
       {/* Footer */}
-      <footer className='container my-14 space-y-5'>
+      <footer className='container my-14'>
         <Heading title='Footer' />
       </footer>
     </main>

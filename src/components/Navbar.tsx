@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import useMenuAnimation from './animations/useMenuAnimation'
 import { MenuToggle } from './MenuToggle'
 import useLockBodyScroll from '@/hooks/useLockBodyScroll'
@@ -15,7 +15,7 @@ export const Navbar = () => {
       }
     >
       <div className='w-[250px] h-[65px]'>
-        <Link href='/'>
+        <Link href={'/'}>
           <Image src='/assets/logos/logo.jpg' alt='logo' width={250} height={65} priority />
         </Link>
       </div>
