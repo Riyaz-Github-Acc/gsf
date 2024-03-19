@@ -12,6 +12,7 @@ import Heading from '@/components/Heading'
 import WhyUs from '@/components/WhyUs'
 import { Testimonials } from '@/components/Testimonials'
 import BlogCard from '@/components/BlogCard'
+import Experience from '@/components/Experience'
 
 const Home = () => {
   const images = [
@@ -100,7 +101,7 @@ const Home = () => {
           <Heading title='Why Choose Us' />
           <p className='text-justify text-slate-500'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-            molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente
+            molestias exercitationem ratione, nobis dolore, beatae corporis sapiente
             autem? Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
           </p>
 
@@ -110,57 +111,51 @@ const Home = () => {
 
       {/* Experience */}
       <section className='container my-14'>
-        <Heading title='Experience' />
-        {/* Parallax Image will come here */}
+        <Experience />
       </section>
 
       {/* Team */}
       <section className='container my-14'>
         <Heading title='Our Team' />
-         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+         <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
-          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+          molestias exercitationem ratione, nobis dolore.
         </p>
       </section>
 
       {/* Gallery */}
       <section className='container my-14'>
         <Heading title='Gallery' />
-         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+         <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
-          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+          molestias exercitationem ratione, nobis dolore.
         </p>
       </section>
 
       {/* Athletes */}
       <section className='container my-14'>
         <Heading title='Our Athletes' />
-         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+         <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
-          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+          molestias exercitationem ratione, nobis dolore.
         </p>
       </section>
 
       {/* Instgram */}
       <section className='container my-14'>
         <Heading title='Instgram' />
-         <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+         <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
-          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+          molestias exercitationem ratione, nobis dolore.
         </p>
       </section>
 
       {/* Testimonials */}
       <section className='container my-14'>
         <Heading title='Testimonials' />
-        <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+        <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
-          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+          molestias exercitationem ratione, nobis dolore.
         </p>
         <Testimonials />
       </section>
@@ -168,10 +163,9 @@ const Home = () => {
       {/* Blog */}
       <section className='container my-14'>
         <Heading title='Blog Posts' />
-        <p className='text-slate-500 pr-10 md:pr-60 lg:pr-96 mt-2 mb-10'>
+        <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
-          molestias doloribus exercitationem ratione, nobis dolore, beatae corporis sapiente autem?
-          Iste, maxime sapiente at nostrum ipsa commodi dolor praesentium.
+          molestias exercitationem ratione, nobis dolore.
         </p>
         <BlogCard />
         <div className='flex items-center justify-center mt-7'>

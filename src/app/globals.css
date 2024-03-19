@@ -183,7 +183,7 @@ h2, h3 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 400px;
+    width: 100%;
     background: #000;
     padding-top: 100px;
     transform: translateY(-100%);

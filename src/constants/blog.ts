@@ -6,7 +6,7 @@ const blogDetails: BlogProps[] = [
     title: 'Genesis Won The District Tournament',
     content:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    author: 'Vairavanathon',
+    author: 'Vairavanathan',
     days: '5 days ago',
     authorIcon: '/assets/icons/athlete.png',
     dayIcon: '/assets/icons/clock.png',
@@ -16,7 +16,7 @@ const blogDetails: BlogProps[] = [
     title: 'Genesis Won The District Tournament',
     content:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    author: 'Vairavanathon',
+    author: 'Vairavanathan',
     days: '10 min ago',
     authorIcon: '/assets/icons/athlete.png',
     dayIcon: '/assets/icons/clock.png',
@@ -26,7 +26,7 @@ const blogDetails: BlogProps[] = [
     title: 'Genesis Won The District Tournament',
     content:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    author: 'Vairavanathon',
+    author: 'Vairavanathan',
     days: '5 days ago',
     authorIcon: '/assets/icons/athlete.png',
     dayIcon: '/assets/icons/clock.png',
