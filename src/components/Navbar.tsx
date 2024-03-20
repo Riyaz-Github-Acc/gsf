@@ -47,7 +47,7 @@ export const FloatNavbar = () => {
   return (
     <motion.nav
       className={
-        'sticky top-0 left-0 mx-auto flex items-center justify-between gap-12 bg-[#000] text-white z-[12] px-10 py-3 shadow-2xl hideOnMobile'
+        'sticky top-0 left-0 mx-auto flex items-center justify-between gap-12 bg-[#000] text-white z-[100] px-10 py-3 shadow-2xl hideOnMobile'
       }
       variants={{
         visible: { y: 0, opacity: 1 },
@@ -56,7 +56,7 @@ export const FloatNavbar = () => {
       animate={isHidden ? 'hidden' : 'visible'}
       transition={{ duration: 0.75, ease: 'easeInOut' }}
     >
-      <div className='w-[250px] h-[65px] flex items-center justify-center p-2 bg-white'>
+      <div className={'w-[250px] h-[65px] flex items-center justify-center p-2 bg-white'}>
         <Link href='/'>
           <Image src='/assets/logos/logo.png' alt='logo' width={250} height={65} priority />
         </Link>
@@ -96,7 +96,7 @@ export const MobileFloatNavbar = () => {
   return (
     <motion.nav
       className={
-        'sticky top-0 right-0 mx-auto flex items-center justify-between gap-12 bg-[#ffffff] text-white z-[12] shadow-2xl p-4 mobileNav'
+        'sticky top-0 right-0 mx-auto flex items-center justify-between gap-12 bg-[#ffffff] text-white z-[100] shadow-2xl p-4 mobileNav'
       }
       variants={{
         visible: { y: 0, opacity: 1 },
@@ -112,7 +112,7 @@ export const MobileFloatNavbar = () => {
       </div>
 
       <div ref={scope}>
-        <nav className='menu'>
+        <nav className={`menu ${isHidden && 'pointer-events-none hidden'}`}>
           <ul>
             {menu.map((link) => (
               <Link href={link.href} key={link.name}>

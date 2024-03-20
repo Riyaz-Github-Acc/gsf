@@ -13,6 +13,7 @@ import WhyUs from '@/components/WhyUs'
 import { Testimonials } from '@/components/Testimonials'
 import BlogCard from '@/components/BlogCard'
 import Experience from '@/components/Experience'
+import { TeamGallery } from '@/components/TeamGallery'
 
 const Home = () => {
   const images = [
@@ -42,7 +43,7 @@ const Home = () => {
   return (
     <main>
       {/* Navbar */}
-      {isScrolling ? <FloatNavbar /> : <Navbar />}
+      {/* {isScrolling ? <FloatNavbar /> : <Navbar />} */}
       <MobileFloatNavbar />
 
       {/* Hero Section */}
@@ -115,12 +116,13 @@ const Home = () => {
       </section>
 
       {/* Team */}
-      <section className='container my-14'>
+      <section className='container my-14 relative'>
         <Heading title='Our Team' />
          <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
           molestias exercitationem ratione, nobis dolore.
         </p>
+        <TeamGallery />
       </section>
 
       {/* Gallery */}
