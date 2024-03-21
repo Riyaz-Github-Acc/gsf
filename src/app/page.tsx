@@ -143,9 +143,9 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Instgram */}
+      {/* Events */}
       <section className='container my-14'>
-        <Heading title='Instgram' />
+        <Heading title='Events' />
          <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
           molestias exercitationem ratione, nobis dolore.
@@ -173,6 +173,15 @@ const Home = () => {
         <div className='flex items-center justify-center mt-7'>
           <PrimaryBtn label='View More'/>
         </div>
+      </section>
+
+       {/* Instgram */}
+       <section className='container my-14'>
+        <Heading title='Instgram' />
+         <p className='text-slate-500 pr-0 md:pr-60 lg:pr-96 mt-2 mb-10'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae voluptates
+          molestias exercitationem ratione, nobis dolore.
+        </p>
       </section>
 
       {/* Footer */}

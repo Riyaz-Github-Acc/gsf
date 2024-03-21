@@ -138,6 +138,20 @@ h3 {
   }
 }
 
+/* Experience */
+.experience {
+  min-height: 100%; /* Use min-height instead of height */
+  width: 100%;
+  background-image: linear-gradient(-45deg, rgba(248, 130, 30, 0.35), rgba(109, 109, 109, 0.4)),
+    url('/assets/slider-images/img-5.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: clamp(4rem, 12vw, 10rem);
+  padding-bottom: clamp(4rem, 12vw, 10rem);
+}
+
 /* Testimonials */
 .testimonial {
   min-width: 125px;

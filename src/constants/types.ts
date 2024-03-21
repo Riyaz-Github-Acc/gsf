@@ -12,3 +12,8 @@ export interface BlogProps {
   authorIcon: string
   dayIcon: string
 }
+
+export interface ExperienceProps {
+  value: number
+  field: string
+}
